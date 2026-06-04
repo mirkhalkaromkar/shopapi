@@ -96,12 +96,12 @@ jobs:
       - name: Install and build frontend
         working-directory: ./frontend
         env:
-          REACT_APP_API_URL: https://${{ secrets.CLOUDFRONT_DOMAIN }}/api
+          REACT_APP_API_URL: ${{ secrets.ALB_URL }}
         run: |
           npm install
           npm run build
 
-      - name: Deploy to S3 Bucket
+      - name: Deploy to S3
         run: |
           aws s3 sync frontend/build/ s3://${{ secrets.FRONTEND_BUCKET }} \
             --delete \
