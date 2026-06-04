@@ -36,7 +36,7 @@ INSERT INTO products (name, description, price, stock, category_id, image_url) V
   ('USB-C Hub',           '7-in-1 hub with HDMI and SD card',     1499.00, 120, 1, NULL),
   ('Cotton T-Shirt',      'Unisex plain cotton t-shirt',            499.00, 200, 2, NULL),
   ('Running Shoes',       'Lightweight mesh running shoes',        3499.00, 80, 2, NULL),
-  ('The DevOps Handbook', 'Gene Kim — DevOps practices',           799.00, 30, 3, NULL),
+  ('The DevOps Handbooks', 'Gene Kim — DevOps practices',           799.00, 30, 3, NULL),
   ('Clean Code',          'Robert C. Martin — coding principles',  699.00, 25, 3, NULL),
   ('Coffee Maker',        '12-cup programmable coffee maker',     2199.00, 15, 4, NULL),
   ('Knife Set',           '6-piece stainless steel kitchen knives',1299.00, 40, 4, NULL);
