@@ -9,7 +9,7 @@ jobs:
 
   # ── Job 1: Deploy backend to EC2 via SSM ────────────────
   deploy-backend:
-    name: Deploy Backend
+    name: Deploys Backend
     runs-on: ubuntu-latest
     permissions:
       id-token: write
