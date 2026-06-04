@@ -96,7 +96,7 @@ jobs:
       - name: Install and build frontend
         working-directory: ./frontend
         env:
-          REACT_APP_API_URL: https://d1z4668d1ypnme.cloudfront.net
+          REACT_APP_API_URL: ${{ secrets.FRONTEND_URL }}
         run: |
           npm install
           npm run build
